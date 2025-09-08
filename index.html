@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soiree | Society of Interdisciplinary Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .logo-img {
+            width: 150px;
+            height: 100px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .welcome-section {
+            background: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .welcome-title {
+            font-size: 2.2rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .events-section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .event-date {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .event-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .event-speaker {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .event-image {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(45deg, #f0f2f5, #e1e5e9);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .logo-section {
+                flex-direction: column;
+            }
+            
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo-img">Organization Logo</div>
+                <div class="logo-img">Event Image</div>
+            </div>
+            <h1>Society of Interdisciplinary Research</h1>
+            <p class="subtitle">Bridging Science Through Dialogue</p>
+        </div>
+    </header>
+
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="welcome-title">Welcome to SOIRÉE!</h2>
+            <p>Society of Interdisciplinary Research Excellence - Fostering Innovation Through Scientific Collaboration</p>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title">Featured Events & Distinguished Scientists</h2>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">6 ~ 8 May 2025</div>
+                    <div class="event-image">Event Poster Image</div>
+                    <h3 class="event-title">SOIRÉE Dialogue with Distinguished Scientists</h3>
+                    <div class="event-speaker">Prof. Aiichiro Nakano</div>
+                    <p class="event-description">
+                        Professor of Computer Science with joint appointments in Physics & Astronomy, Quantitative & Computational Biology, and Collaboratory for Advanced Computing and Simulations at University of Southern California. He received a Ph.D. in physics from University of Tokyo, Japan, in 1989. He has authored 485+ refereed articles in the areas of scalable scientific algorithms, massive data visualization and machine learning, and computational materials science. He is a recipient of National Science Foundation Career Award (1997), Best Paper Awards at IEEE/ACM Supercomputing 2001 Conference and IEEE Virtual Reality Conference (2002), Okawa Foundation Faculty Research Award (2003), USC Viterbi School Senior Research Award (2012), US-DOE Aurora Early Science Program award (2017), and is a Fellow of American Physical Society. His research focuses on developing quantum materials at scale using supercomputers.
+                    </p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">13 Oct. 2023</div>
+                    <div class="event-image">AI Materials Design</div>
+                    <h3 class="event-title">Designing New Materials with Artificial Intelligence</h3>
+                    <div class="event-speaker">Prof. Alán Aspuru-Guzik</div>
+                    <p class="event-description">
+                        Professor of Chemistry and Computer Science at the University of Toronto, Canada 150 Research Chair in Theoretical Chemistry, and Canada CIFAR AI Chair at the Vector Institute. His research lies at the interface of computer science with chemistry and physics, focusing on the integration of robotics, machine learning and high-throughput quantum chemistry for the development of materials acceleration platforms. These "self-driving laboratories" promise to accelerate the rate of scientific discovery, with applications to clean energy and optoelectronic materials. He also develops quantum computer algorithms for quantum machine learning and has pioneered quantum algorithms for the simulation of matter. Previously Full Professor at Harvard University (2013-2018), he is a Fellow of the American Physical Society and American Association for the Advancement of Science, recipient of the Sloan Research Fellowship, and co-founder of Zapata AI and Kebotix.
+                    </p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">23 July 2019</div>
+                    <div class="event-image">Distinguished Professor Series</div>
+                    <h3 class="event-title">SOIRÉE Dialog with Distinguished Professor Series</h3>
+                    <div class="event-speaker">Prof. Yasuteru Shigeta</div>
+                    <p class="event-description">
+                        Professor of Theoretical Biophysics and Chemistry in the Center for Computational Sciences at the University of Tsukuba, Japan. Prof. Shigeta received his Ph.D. in Science from Osaka University in 2003 and has research interests in Theoretical Chemistry, Condensed Matter Physics, and Biophysics. He received the "22nd QSCP Promising Scientist Award of CMOA" in 2017. His research focuses on quantum chemistry, density functional theory, electronic structure theory, molecular dynamics, and computational chemistry. He has developed efficient computational methods for protein conformational sampling and has made significant contributions to understanding photosynthesis mechanisms at the quantum level. He is also involved in the Quantum Information and Life Sciences (QiLS) Center, promoting collaborative research at the interface between quantum science and biology.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Society of Interdisciplinary Research (SOIRÉE). All rights reserved.</p>
+            <p>Promoting excellence in interdisciplinary scientific research and collaboration.</p>
+        </div>
+    </footer>
+</body>
+</html>
