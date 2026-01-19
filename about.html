@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About - My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Soiree - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        nav {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">👥 About</a>
+        <a href="news.html">📰 News</a>
+        <a href="contact.html">📞 Contact</a>
     </nav>
     
-    <h1>About Page</h1>
-    <p>This is my about page.</p>
+    <div class="container">
+        <h1>Welcome to Soiree</h1>
+        <p>Your website is live! Here are your pages:</p>
+        
+        <ul style="margin-top: 20px;">
+            <li><a href="index.html">Home</a> - You're here</li>
+            <li><a href="about.html">About</a> - Your about page</li>
+            <li><a href="news.html">News</a> - Latest updates</li>
+            <li><a href="contact.html">Contact</a> - Get in touch</li>
+        </ul>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 5px;">
+            <h3>Your Website URLs:</h3>
+            <p><strong>Main URL:</strong> <code>https://soiree-hk.github.io/soiree-1/</code></p>
+            <p><strong>About page:</strong> <code>https://soiree-hk.github.io/soiree-1/about.html</code></p>
+            <p><strong>News page:</strong> <code>https://soiree-hk.github.io/soiree-1/news.html</code></p>
+        </div>
+    </div>
 </body>
 </html>
